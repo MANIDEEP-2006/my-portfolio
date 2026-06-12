@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Kiran Manideep | Student Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loader"><div class="loader-ring"></div><div class="loader-text">Loading Experience</div></div>
+<div class="cursor-dot"></div><div class="cursor-ring"></div>
+<canvas id="bg3d"></canvas>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+
+<nav id="nav">
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- floating voice control -->
+<button id="voiceCtl" aria-label="voice intro">
+  <span class="vic" id="vicIcon">🔊</span>
+  <span class="vtxt" id="vicTxt">Play my intro</span>
+  <span class="eq"><i></i><i></i><i></i><i></i></span>
+</button>
+
+<main>
+<!-- HERO : avatar on top -->
+<section class="hero" id="home">
+  <div class="avatar-stage" id="avatarStage">
+    <div class="avatar-glow"></div>
+    <div class="avatar-ring"></div>
+    <div class="avatar-ring r2"></div>
+    <div class="avatar-img"><img src="images/avatar.jpg" alt="Sai Kiran Manideep"></div>
+    <div class="orb o1">🐍</div>
+    <div class="orb o2">🤖</div>
+    <div class="orb o3">📊</div>
+    <div class="orb o4">⚡</div>
+  </div>
+  <div class="hero-tag"><span class="dot"></span> Student · Open to Internships</div>
+  <h1>Hi, I'm <span class="grad-text">Sai Kiran Manideep</span></h1>
+  <div class="typing-line">I'm a <span id="typed"></span><span class="typed-caret"></span></div>
+  <p class="hero-desc">A <b>B.Tech CSE (Data Science) student</b> at Vignan Institute of Information Technology, Visakhapatnam. I'm still exploring my path — experimenting with <b>Python, machine learning, data analytics and web development</b> through hands-on projects, and learning something new every single day.</p>
+  <div class="hero-btns">
+    <a class="btn btn-primary" href="#projects">🚀 View My Work</a>
+    <a class="btn btn-ghost" href="mailto:manideep1716@gmail.com">✉️ Contact Me</a>
+  </div>
+  <div class="hero-socials">
+    <a class="soc" href="https://github.com/MANIDEEP-2006" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.02 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.66.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+    <a class="soc" href="https://linkedin.com/in/b-sai-kiran-manideep-62716a317" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.22 8.27h4.54V23H.22V8.27zM8.31 8.27h4.35v2h.06c.61-1.15 2.09-2.36 4.3-2.36 4.6 0 5.45 3.03 5.45 6.97V23h-4.54v-7.2c0-1.72-.03-3.93-2.4-3.93-2.4 0-2.77 1.87-2.77 3.8V23H8.31V8.27z"/></svg></a>
+    <a class="soc" href="mailto:manideep1716@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+    <a class="soc" href="tel:+918309022239" aria-label="Phone"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3.5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2z"/></svg></a>
+  </div>
+  <div class="scroll-hint"><div class="mouse"></div>scroll</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="marquee-track" id="mq">
+  <span>PYTHON <i>◆</i></span><span>MACHINE LEARNING <i>◆</i></span><span>FLASK <i>◆</i></span><span>POWER BI <i>◆</i></span><span>SQL <i>◆</i></span><span>SCIKIT-LEARN <i>◆</i></span><span>PANDAS <i>◆</i></span><span>JAVASCRIPT <i>◆</i></span><span>NLP <i>◆</i></span><span>DATA ANALYSIS <i>◆</i></span>
+</div></div>
+
+<!-- STATS (no CGPA) -->
+<section style="padding-top:80px;padding-bottom:40px;">
+  <div class="stats">
+    <div class="stat-card reveal"><div class="stat-num"><span class="count" data-to="3">0</span>+</div><div class="stat-label">Projects Built</div></div>
+    <div class="stat-card reveal" style="transition-delay:.1s"><div class="stat-num"><span class="count" data-to="30">0</span>+</div><div class="stat-label">Coding Contests</div></div>
+    <div class="stat-card reveal" style="transition-delay:.2s"><div class="stat-num"><span class="count" data-to="4">0</span></div><div class="stat-label">Certifications</div></div>
+    <div class="stat-card reveal" style="transition-delay:.3s"><div class="stat-num"><span class="count" data-to="2">0</span>★</div><div class="stat-label">CodeChef Rating</div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-head reveal">
+    <div class="sec-kicker">— Who I Am —</div>
+    <h2 class="sec-title">About <span class="grad-text">Me</span></h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal left">
+      <p>I'm <strong>Bonugu Sai Kiran Manideep</strong> — a curious engineering student from <span class="hl">Visakhapatnam, India</span>, currently pursuing my B.Tech in CSE (Data Science) and figuring out where my passion fits best in the world of tech.</p>
+      <p>So far my journey has taken me through <span class="hl">machine learning experiments</span> on real agricultural datasets, a <span class="hl">full-stack networking platform</span> built with Flask, and <span class="hl">business dashboards</span> in Power BI. Each project teaches me something new about what I love building.</p>
+      <p>When I'm not studying, you'll find me solving problems on <strong>CodeChef, LeetCode and HackerRank</strong> — 30+ contests and counting. I'm actively looking for an <strong>internship</strong> where I can learn from real engineers and contribute meaningfully.</p>
+      <div class="info-chips">
+        <div class="chip">📍 Visakhapatnam, India</div>
+        <div class="chip">🎓 B.Tech CSE (DS) '28</div>
+        <div class="chip">💼 Open to Internships</div>
+        <div class="chip">🌐 English · Telugu · Hindi</div>
+      </div>
+    </div>
+    <div class="about-card reveal right tilt" id="eduCard">
+      <div class="shine"></div>
+      <div class="edu-item">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <h3>B.Tech — CSE (Data Science)</h3>
+          <p>Vignan Institute of Information Technology, Visakhapatnam<br>Aug 2024 – May 2028 (Expected)</p>
+        </div>
+      </div>
+      <div class="edu-points">
+        <div class="edu-point"><span class="pic">📚</span><span><b>Currently learning:</b> Machine Learning, Data Structures & Algorithms, Web Development</span></div>
+        <div class="edu-point"><span class="pic">🧪</span><span><b>Hands-on:</b> 3+ self-driven projects on real-world datasets, beyond the curriculum</span></div>
+        <div class="edu-point"><span class="pic">🌱</span><span><b>Exploring:</b> AI Engineering · Data Science · Software Development — finding my path</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background:rgba(255,255,255,.5);">
+  <div class="sec-head reveal">
+    <div class="sec-kicker">— What I'm Learning —</div>
+    <h2 class="sec-title">My <span class="grad-text">Skills</span></h2>
+    <p class="sec-sub">Technologies I've been learning and using in my projects — growing a little stronger with every build.</p>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <h3><span class="ic">💻</span>Languages</h3>
+      <div class="skill-row"><div class="lbl"><span>Python</span><span>90%</span></div><div class="bar"><div class="bar-fill" data-w="90%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>SQL</span><span>82%</span></div><div class="bar"><div class="bar-fill" data-w="82%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>C</span><span>78%</span></div><div class="bar"><div class="bar-fill" data-w="78%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>JavaScript</span><span>70%</span></div><div class="bar"><div class="bar-fill" data-w="70%"></div></div></div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.1s">
+      <h3><span class="ic">🤖</span>Machine Learning & AI</h3>
+      <div class="skill-row"><div class="lbl"><span>Scikit-learn · Model Building</span><span>85%</span></div><div class="bar"><div class="bar-fill" data-w="85%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>Regression & Classification</span><span>87%</span></div><div class="bar"><div class="bar-fill" data-w="87%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>Feature Engineering</span><span>83%</span></div><div class="bar"><div class="bar-fill" data-w="83%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>NLP (learning)</span><span>68%</span></div><div class="bar"><div class="bar-fill" data-w="68%"></div></div></div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.2s">
+      <h3><span class="ic">📊</span>Data Analysis & Viz</h3>
+      <div class="skill-row"><div class="lbl"><span>Pandas · NumPy · EDA</span><span>88%</span></div><div class="bar"><div class="bar-fill" data-w="88%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>Power BI · DAX · Power Query</span><span>85%</span></div><div class="bar"><div class="bar-fill" data-w="85%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>Matplotlib · Seaborn</span><span>82%</span></div><div class="bar"><div class="bar-fill" data-w="82%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>Excel (Advanced)</span><span>80%</span></div><div class="bar"><div class="bar-fill" data-w="80%"></div></div></div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.3s">
+      <h3><span class="ic">🌐</span>Web & Tools</h3>
+      <div class="skill-row"><div class="lbl"><span>Flask · REST APIs</span><span>80%</span></div><div class="bar"><div class="bar-fill" data-w="80%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>HTML5 · CSS3</span><span>85%</span></div><div class="bar"><div class="bar-fill" data-w="85%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>SQLite · Databases</span><span>76%</span></div><div class="bar"><div class="bar-fill" data-w="76%"></div></div></div>
+      <div class="skill-row"><div class="lbl"><span>Git · GitHub</span><span>84%</span></div><div class="bar"><div class="bar-fill" data-w="84%"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS : SLIDING CAROUSEL -->
+<section id="projects">
+  <div class="sec-head reveal">
+    <div class="sec-kicker">— My Work —</div>
+    <h2 class="sec-title">Projects <span class="grad-text">Showcase</span></h2>
+    <p class="sec-sub">Slides change automatically — use the arrows or dots, and tap “View Details” for the full story of each project.</p>
+  </div>
+
+  <div class="carousel reveal" id="carousel">
+    <button class="car-arrow prev" id="carPrev" aria-label="previous">❮</button>
+    <div class="car-view">
+      <div class="car-track" id="carTrack">
+
+        <div class="slide">
+          <div class="pcard">
+            <div class="pimg"><img src="images/project-trustlink.jpg" alt="TrustLink"><span class="badge">Web Platform</span></div>
+            <div class="pbody">
+              <h3>TrustLink — Verified Networking</h3>
+              <p class="pdesc">A full-stack platform where users build trust-scored profiles, connect with peers, and verify credentials — built with Flask, REST APIs and SQLite.</p>
+              <div class="ptags"><span class="ttag">Python</span><span class="ttag">Flask</span><span class="ttag">SQLite</span><span class="ttag">JavaScript</span></div>
+              <div class="pacts">
+                <button class="pop-btn" data-proj="0">✨ View Details</button>
+                <a class="plink" href="https://github.com/MANIDEEP-2006/trustlink_landing" target="_blank">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="pcard">
+            <div class="pimg"><img src="images/project-greencrop.jpg" alt="GreenCrop"><span class="badge">Machine Learning</span></div>
+            <div class="pbody">
+              <h3>GreenCrop — Crop Yield Prediction</h3>
+              <p class="pdesc">An end-to-end ML pipeline that predicts crop yields on 10,000+ row agricultural datasets — improved accuracy ~18% with feature engineering & tuning.</p>
+              <div class="ptags"><span class="ttag">Python</span><span class="ttag">Scikit-learn</span><span class="ttag">Pandas</span><span class="ttag">NumPy</span></div>
+              <div class="pacts">
+                <button class="pop-btn" data-proj="1">✨ View Details</button>
+                <a class="plink" href="https://github.com/MANIDEEP-2006/green-crop-yeild-detection" target="_blank">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="pcard">
+            <div class="pimg"><img src="images/project-dashboard.jpg" alt="Sales Analytics Dashboard"><span class="badge">Business Intelligence</span></div>
+            <div class="pbody">
+              <h3>Sales Analytics Dashboard</h3>
+              <p class="pdesc">An interactive multi-page Power BI dashboard tracking revenue, regional KPIs and sales performance across 5+ data sources — cutting reporting effort ~40%.</p>
+              <div class="ptags"><span class="ttag">Power BI</span><span class="ttag">DAX</span><span class="ttag">Power Query</span><span class="ttag">Excel</span></div>
+              <div class="pacts">
+                <button class="pop-btn" data-proj="2">✨ View Details</button>
+                <a class="plink" href="https://github.com/MANIDEEP-2006/business-sales-dashboard" target="_blank">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <button class="car-arrow next" id="carNext" aria-label="next">❯</button>
+    <div class="car-dots" id="carDots"></div>
+    <div class="car-progress"><i id="carProg"></i></div>
+  </div>
+</section>
+
+<!-- PROJECT MODAL -->
+<div id="pmodal">
+  <div class="backdrop" id="mBackdrop"></div>
+  <div class="modal-card">
+    <button class="mclose" id="mClose">✕</button>
+    <img class="modal-img" id="mImg" src="" alt="">
+    <div class="modal-body">
+      <div class="mrole" id="mRole"></div>
+      <h3 id="mTitle"></h3>
+      <div id="mDesc"></div>
+      <div class="mmetrics" id="mMetrics"></div>
+      <div class="ptags" id="mTags" style="margin:14px 0 24px;display:flex;flex-wrap:wrap;gap:8px;"></div>
+      <a class="pop-btn" id="mLink" href="" target="_blank" style="text-decoration:none;">⌥ Open on GitHub →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" style="background:rgba(255,255,255,.5);">
+  <div class="sec-head reveal">
+    <div class="sec-kicker">— Milestones —</div>
+    <h2 class="sec-title">Achievements & <span class="grad-text">Recognition</span></h2>
+  </div>
+  <div class="ach-grid">
+    <div class="ach-card reveal"><span class="ach-emoji">⭐</span><h3>2★ CodeChef Coder</h3><p>Achieved a 2-Star rating on CodeChef with 30+ competitive programming contests across CodeChef, LeetCode & HackerRank.</p></div>
+    <div class="ach-card reveal" style="transition-delay:.1s"><span class="ach-emoji">🏆</span><h3>Consistent Academic Performer</h3><p>Ranking among the top performers in the CSE (Data Science) department at Vignan Institute of Information Technology.</p></div>
+    <div class="ach-card reveal" style="transition-delay:.2s"><span class="ach-emoji">🚀</span><h3>Self-Driven Builder</h3><p>Independently built 3+ full-stack & ML projects on real-world datasets — going beyond the academic curriculum.</p></div>
+  </div>
+  <div class="sec-head reveal" style="margin-top:90px;">
+    <h2 class="sec-title" style="font-size:clamp(24px,3vw,34px);">Certifications 📜</h2>
+  </div>
+  <div class="cert-grid">
+    <div class="cert reveal"><div class="ic">📊</div><div><h4>Power BI</h4><p>Microsoft · 2024</p></div></div>
+    <div class="cert reveal" style="transition-delay:.08s"><div class="ic">🐍</div><div><h4>Python Basics</h4><p>Google · 2024</p></div></div>
+    <div class="cert reveal" style="transition-delay:.16s"><div class="ic">📈</div><div><h4>Data Visualization</h4><p>Kaggle · 2024</p></div></div>
+    <div class="cert reveal" style="transition-delay:.24s"><div class="ic">🤖</div><div><h4>Machine Learning</h4><p>Corizo · 2025</p></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-card reveal">
+    <h2>Let's Connect & <span class="grad-text">Learn Together</span> 🚀</h2>
+    <p>I'm a student actively looking for internships and chances to learn from real-world teams. If you have an opportunity, advice, or just want to chat about tech — my inbox is always open!</p>
+    <div class="contact-rows">
+      <a class="crow" href="mailto:manideep1716@gmail.com">✉️ manideep1716@gmail.com</a>
+      <a class="crow" href="tel:+918309022239">📞 +91 83090 22239</a>
+    </div>
+    <div class="contact-rows">
+      <a class="crow" href="https://github.com/MANIDEEP-2006" target="_blank">⌥ github.com/MANIDEEP-2006</a>
+      <a class="crow" href="https://linkedin.com/in/b-sai-kiran-manideep-62716a317" target="_blank">in/ LinkedIn Profile</a>
+    </div>
+    <a class="btn btn-primary" href="mailto:manideep1716@gmail.com" style="position:relative;">Say Hello 👋</a>
+  </div>
+</section>
+</main>
+
+<footer>Designed & built with 💜 by <b>Bonugu Sai Kiran Manideep</b> · © 2026</footer>
+<button id="toTop" aria-label="back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
