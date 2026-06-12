@@ -195,7 +195,7 @@ const projData=[
   desc:'<p>GreenCrop is an <b>end-to-end machine learning pipeline</b> for crop yield prediction, trained on 10,000+ row agricultural datasets using <b>Random Forest and Linear Regression</b> via Scikit-learn.</p><p>Through systematic feature engineering, normalization and hyperparameter tuning, I improved model accuracy by <b>~18%</b>, validating performance with RMSE and R² metrics. The pipeline includes thorough preprocessing — missing-value imputation, outlier treatment and feature scaling.</p>',
   metrics:['📈 +18% Model Accuracy','🗄️ 10,000+ Rows','🧪 RMSE & R² Validated'],
   tags:['Python','Scikit-learn','Pandas','NumPy','Matplotlib','Seaborn'],
-  link:'https://github.com/MANIDEEP-2006/green-crop-yield-detection'},
+  link:'https://github.com/MANIDEEP-2006/green-crop-yield-detection',live:'https://green-crop-yield-detection.onrender.com/'},
  {role:'Business Intelligence',title:'Sales Analytics Dashboard',
   desc:'<p>An <b>interactive multi-page Power BI dashboard</b> tracking revenue trends, regional KPIs and sales performance across <b>5+ integrated business data sources</b>.</p><p>I cleaned and transformed raw data using Excel Power Query and custom <b>DAX measures</b>, reducing manual reporting effort by <b>~40%</b>. The dashboard delivers bar, line and funnel visuals plus dynamic KPI cards with period-over-period comparisons for data-driven decisions.</p>',
   metrics:['⚡ −40% Reporting Effort','🔗 5+ Data Sources','📊 Dynamic KPI Cards'],
