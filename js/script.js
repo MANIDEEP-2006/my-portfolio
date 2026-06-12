@@ -58,7 +58,7 @@ burger.onclick=()=>links.classList.toggle('open');
 links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
 
 /* TYPING — student roles */
-const roles=['B.Tech CSE Student 🎓','Data Science Learner 📊','Aspiring AI / ML Engineer 🤖','Curious Problem Solver ⚡','Exploring My Path in Tech 🌱'];
+const roles=['3rd Year B.Tech CSE Student 🎓','Data Science Learner 📊','Aspiring AI / ML Engineer 🤖','Curious Problem Solver ⚡','Exploring My Path in Tech 🌱'];
 const typedEl=document.getElementById('typed');
 let ri=0,ci=0,del=false;
 (function type(){
@@ -73,7 +73,7 @@ let ri=0,ci=0,del=false;
 /* ===== VOICE: AUTO-PLAY ON OPEN + MUTE ===== */
 const voiceCtl=document.getElementById('voiceCtl');
 const vicIcon=document.getElementById('vicIcon'),vicTxt=document.getElementById('vicTxt');
-const introText=`Hello! Welcome to my portfolio. I'm Bonugu Sai Kiran Manideep, a B.Tech Computer Science student specialising in Data Science at Vignan Institute of Information Technology, Visakhapatnam. I'm still a student exploring my path in technology, learning machine learning, data analytics and web development through hands-on projects. I've built TrustLink, a networking web platform. GreenCrop, a machine learning model that predicts crop yields. And a sales analytics dashboard in Power B I. I also enjoy competitive programming, with over 30 contests on CodeChef, LeetCode and HackerRank. I'm looking for an internship where I can learn from real engineers and grow. Thanks for visiting, and feel free to explore my work!`;
+const introText=`Hello! Welcome to my portfolio. I'm Bonugu Sai Kiran Manideep, a third year B.Tech Computer Science student specialising in Data Science at Vignan Institute of Information Technology, Visakhapatnam. I'm still a student exploring my path in technology, learning machine learning, data analytics and web development through hands-on projects. I've built TrustLink, a networking web platform. GreenCrop, a machine learning model that predicts crop yields. And a sales analytics dashboard in Power B I. I also enjoy competitive programming, with over 30 contests on CodeChef, LeetCode and HackerRank. I'm looking for an internship where I can learn from real engineers and grow. Thanks for visiting, and feel free to explore my work!`;
 let muted=false,autoTried=false,spokenOnce=false;
 function setUI(state){
   if(state==='speaking'){voiceCtl.classList.add('speaking');vicIcon.textContent='🔊';vicTxt.textContent='Playing… tap to mute';}
