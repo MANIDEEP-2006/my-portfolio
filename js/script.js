@@ -188,7 +188,7 @@ carEl.addEventListener('touchend',e=>{
 const projData=[
  {role:'Full-Stack Web Platform',title:'TrustLink — Verified Networking',
   desc:'<p>TrustLink is a <b>full-stack web platform for verified professional networking</b>. Users create trust-scored profiles, establish peer connections, and validate credentials through a structured authentication system.</p><p>I architected a <b>RESTful Flask backend</b> with session-based authentication, user registration and profile management modules, with secure data storage in SQLite. The frontend is fully responsive — HTML5, CSS3 and JavaScript with dynamic content rendering and mobile-optimised layouts.</p>',
-  metrics:['🔐 Session-based Auth','⭐ Trust-Scored Profiles','📱 Fully Responsive UI'],
+  metrics:['🔐 JWT Auth + PostgreSQL','🤖 AI OCR + Face Match','🔳 Signed QR Reports'],
   tags:['Python','Flask','REST APIs','SQLite','JavaScript','HTML5','CSS3'],
   link:'https://github.com/MANIDEEP-2006/trustlink_landing',live:'https://manideep-2006.github.io/trustlink_landing/'},
  {role:'Machine Learning Pipeline',title:'GreenCrop — Crop Yield Prediction',
